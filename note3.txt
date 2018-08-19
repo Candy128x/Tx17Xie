@@ -1,0 +1,5 @@
+proj: Tx17Xie
+#180819
+
+remttx17 https://github.com/Candy128x/Tx17Xie.git
+brntx17

@@ -1,0 +1,779 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Transmission 2k17</title>
+
+<![if !IE]>
+<link rel="icon" href="DD-png-v4-3.png" type="image/x-icon" />
+<![endif]>
+<!-- This is needed for IE -->
+<link rel="shortcut icon" href="img/favicon.ico" type="image/ico" />
+
+<meta charset=utf-8 />
+<link rel="stylesheet" href="http://www.jacklmoore.com/colorbox/example1/colorbox.css" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <link href="slider/themes/4/js-image-slider.css" rel="stylesheet" type="text/css" />
+    <script src="slider/themes/4/js-image-slider.js" type="text/javascript"></script>
+    <link href="slider/generic.css" rel="stylesheet" type="text/css" />
+	
+	
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
+body{cursor: url(http://cur.cursors-4u.net/cursors/cur-11/cur1021.ani), url(http://cur.cursors-4u.net/cursors/cur-11/cur1021.png), progress !important;}
+
+.textWrap{
+word-wrap: break-word;
+}
+</style>
+
+<script language="JavaScript">
+//Disable right click script
+var message="Sorry, right-click has been disabled";
+///////////////////////////////////
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2||e.which==3) {(message);return false;}}}
+if (document.layers)
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+document.oncontextmenu=new Function("return false")
+//
+function disableCtrlKeyCombination(e)
+{
+//list all CTRL + key combinations you want to disable
+var forbiddenKeys = new Array('a','s','n', 'c', 'x', 'v', 'j' , 'w');
+var key;
+var isCtrl;
+if(window.event)
+{
+key = window.event.keyCode;     //IE
+if(window.event.ctrlKey)
+isCtrl = true;
+else
+isCtrl = false;
+}
+else
+{
+key = e.which;     //firefox
+if(e.ctrlKey)
+isCtrl = true;
+else
+isCtrl = false;
+}
+//if ctrl is pressed check if other key is in forbidenKeys array
+if(isCtrl)
+{
+for(i=0; i<forbiddenKeys.length; i++)
+{
+//case-insensitive comparation
+if(forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase())
+{
+//alert('Key combination CTRL + '+String.fromCharCode(key) +' has been disabled.');
+return false;
+}
+}
+}
+return true;
+}
+
+// Alt | F10 key Disable | F12
+document.onkeydown = function (e) {
+	if(e.which == 18 || e.which == 121 || e.which == 123){
+		return false;
+	}
+}
+</script>
+
+</head>
+<body class="w3-theme-l5">
+<body onkeypress="return disableCtrlKeyCombination(event);" onkeydown="return disableCtrlKeyCombination(event);" >
+
+<audio autoplay loop> 
+  <source src="mus/mus3.mp3">
+</audio>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <ul class="w3-navbar w3-theme-d2 w3-left-align w3-large">
+  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+    <a class="w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="#" class="w3-padding-large w3-theme-d4"><img src="img/Xie2.png" width="38" height="25"  style="-webkit-filter: invert(100%);filter: invert(100%);"> </i>&nbsp Xie</a></li>
+  <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white" title="About"><i class="fa fa-info-circle fa-lg"></i>&nbsp About</a></li>
+  <li class="w3-hide-small w3-dropdown-hover">
+    <a href="#" class="w3-padding-large w3-hover-white" title="Categories"><i class="fa fa-tasks"></i>&nbsp Categories &nbsp <span class="w3-badge w3-right w3-small w3-green">3</span></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+      <a href="#">Spandan 2k16</a>
+      <a href="#">Transmission 2k17</a>
+      <a href="#">SPARX 2017</a>
+    </div>
+  </li>
+    <li class="w3-hide-small"><a href="#venu" class="w3-padding-large w3-hover-white" title="Location"><i class="fa fa-map-marker"></i>&nbsp Venu </a></li>
+  <li class="w3-hide-small"><a href="https://goo.gl/poYZ4t" class="w3-padding-large w3-hover-white" title="Regester.. Right Now !!"><i class="fa fa-pencil"  aria-hidden="true"></i>&nbsp Register</a></li>
+  
+  <li class="w3-hide-small w3-right"><a href="#share" class="w3-padding-large w3-hover-white" title="Share"><img src="img/img_avatar5.png" class="w3-circle" style="height:25px;width:25px" alt="Avatar">&nbsp <i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
+ </ul>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:51px">
+  <ul class="w3-navbar w3-left-align w3-large w3-theme">
+    <li><a class="w3-padding-large" href="#">Link 1</a></li>
+    <li><a class="w3-padding-large" href="#">Link 2</a></li>
+    <li><a class="w3-padding-large" href="#">Link 3</a></li>
+    <li><a class="w3-padding-large" href="#">My Profile</a></li>
+  </ul>
+</div>
+
+<!-- Page Container -->
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
+  <!-- The Grid -->
+  <div class="w3-row">
+    <!-- Left Column -->
+    <div class="w3-col m3">
+	
+	
+      <div class="w3-card-2 w3-round w3-white">
+        <div class="w3-container">
+		
+         <h4 class="w3-center">Transmission</h4>
+         <div class="w3-center"><div style="margin:3px;"><img src="img/trans3.png" style="height:70%;width:70%;border-radius: 25px;border: 3px dashed #FFD700;-webkit-filter: invert(100%);filter: invert(100%);" alt="Avatar"></div></div>
+         <hr>
+			<p style="font-family:Lucida Sans Unicode, Lucida Grande, sans-serif";>&nbsp&nbsp&nbsp
+			Transmission is the annual inter-college tech festival at XIE. This year it was held on 6-7 Feb 2017. We had a huge participation from colleges all over Mumbai, attracted by events such as Xavier Challenge (robotics), Golf Junkie, Robo Wars and other exciting, unique events.
+			</p>
+        </div>
+      </div>
+      <br>
+	  
+	  
+	        <!-- Interests -->
+      <div class="w3-card-2 w3-round w3-white w3-hide-small">
+        <div class="w3-container">
+          <p> > Interests >> </p>
+          <p>
+            <span class="w3-tag w3-small w3-theme-d5">News</span>
+            <span class="w3-tag w3-small w3-theme-d4">Event</span>
+            <span class="w3-tag w3-small w3-theme-d3">Prize</span>
+            <span class="w3-tag w3-small w3-theme-d2">Games</span>
+            <span class="w3-tag w3-small w3-theme-d1">Friends</span>
+            <span class="w3-tag w3-small w3-theme">Games</span>
+            <span class="w3-tag w3-small w3-theme-l1">Coding</span>
+            <span class="w3-tag w3-small w3-theme-l2">Food</span>
+            <span class="w3-tag w3-small w3-theme-l3">Design</span>
+            <span class="w3-tag w3-small w3-theme-l4">Art</span>
+            <span class="w3-tag w3-small w3-theme-l5">Photos</span>
+          </p>
+        </div>
+      </div>
+      <br>
+
+<!-- event -->
+      <div class="w3-card-2 w3-round w3-white">
+        <div class="w3-container">
+         <h4 class="w3-center">Game Maker</h4>
+			<div align="center">
+		 <img src="img/trans5.jpg" width="98%" height="100%" class="w3-margin-bottom"/>
+		 </div>
+        </div>
+      </div>
+      <br>
+	  
+	  
+<!-- Accordion -->
+      <div class="w3-card-2 w3-round">
+        <div class="w3-accordion w3-white">
+		<div>.</div>
+		<div style="font-family:Trebuchet MS, Helvetica, sans-serif;font-size:28px;text-align:center;margin-top:5px;margin-bottom:5px;">
+		FAQs
+		</div>
+          <button onclick="myFunction('Demo1')" class="w3-btn-block w3-theme-l1 w3-left-align"><i class="fa fa-hand-o-right aria-hidden=true fa-fw w3-margin-right"></i><span class="textWrap"> What is the registration fee?</span></button>
+          <div id="Demo1" class="w3-accordion-content w3-container">
+		  <p><big>
+		  Registration Fee
+		  </big></p>
+            <p>Registration fee is different for each category (refer the registration page). The registration cost includes stationery tournament charges and goodies.</p>
+          </div>
+          <button onclick="myFunction('Demo2')" class="w3-btn-block w3-theme-l1 w3-left-align"><i class="fa fa-hand-o-right aria-hidden=true fa-fw w3-margin-right"></i>Where is the event being held?</button>
+          <div id="Demo2" class="w3-accordion-content w3-container">
+            <p>The address of the event is stated on the map in the location section.</p>
+          </div>
+		  
+		  <button onclick="myFunction('Demo3')" class="w3-btn-block w3-theme-l1 w3-left-align"><i class="fa fa-hand-o-right aria-hidden=true fa-fw w3-margin-right"></i>Is accommodation available?</button>
+          <div id="Demo3" class="w3-accordion-content w3-container">
+            <p>Yes. Accommodation will be provided to first 100 entries free of cost.</p>
+          </div>
+		  
+		  <button onclick="myFunction('Demo4')" class="w3-btn-block w3-theme-l1 w3-left-align"><i class="fa fa-hand-o-right aria-hidden=true fa-fw w3-margin-right"></i>Who can accompany team members?</button>
+          <div id="Demo4" class="w3-accordion-content w3-container">
+            <p>A team manager for Undergrads and parents for High School.</p>
+          </div>
+		  
+		  <button onclick="myFunction('Demo5')" class="w3-btn-block w3-theme-l1 w3-left-align"><i class="fa fa-hand-o-right aria-hidden=true fa-fw w3-margin-right"></i>Will a travel discount be provided?</button>
+          <div id="Demo5" class="w3-accordion-content w3-container">
+            <p>Travel discounts will only be provided to participants.</p>
+          </div>
+		  
+          <button onclick="myFunction('Demo21')" class="w3-btn-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> My Photos</button>
+          <div id="Demo21" class="w3-accordion-content w3-container">
+         <div class="w3-row-padding">
+         <br>
+           <div class="w3-half">
+             <img src="img/img_lights.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="img/img_nature.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="img/img_mountains.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="img/img_forest.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="img/img_nature.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="img/img_fjords.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+         </div>
+          </div>
+        </div>
+      </div>
+      <br>	  
+
+	<!-- Alert Box -->
+      <div class="w3-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
+        <span onclick="this.parentElement.style.display='none'" class="w3-hover-text-grey w3-closebtn">
+          <i class="fa fa-remove"></i>
+        </span>
+        <p><strong>Hey frds!</strong></p>
+        <p>plz register your name to your faviourate event, findout which frd are participate same event you participate !!</p>
+      </div>
+
+
+	
+	
+      <!-- Profile -->
+      <div class="w3-card-2 w3-round w3-white">
+        <div class="w3-container">
+         <h4 class="w3-center">Dev</h4>
+         <p class="w3-center"><img src="img/DDD (2).jpg" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+         <hr>
+         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Designer, Programmer</p>
+         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> las Vegas, Nevada, USA</p>
+         <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> Jan 16, 1991</p>
+        </div>
+      </div>
+      <br>
+      
+<!-- event -->
+      <div class="w3-card-2 w3-round w3-white">
+        <div class="w3-container">
+         <h4 class="w3-center">Counter Strike</h4>
+			<div align="center">
+		 <img src="img/trans6.jpg" width="98%" height="100%" class="w3-margin-bottom"/>
+		 </div>
+        </div>
+      </div>
+      <br>
+	  
+<!-- Interests -->
+      <div class="w3-card-2 w3-round w3-white w3-hide-small" >
+        <div class="w3-container" style="text-align:center;">
+          <div style=" font-size:16px;padding:10px;"> >> Prizes << </div>
+            <span style=" font-size:16px;padding:2px;" id="venu2" class="w3-tag w3-small w3-theme-l1"><big>More than 3,000.00</big></span>
+        <br><br>
+		</div>
+      </div>
+      <br>
+      
+      <!-- Location -->
+      <div class="w3-card-2 w3-round w3-white" id="venu2">
+        <div class="w3-container">
+         <h4 class="w3-center"><big><u>Event Location</u></big></h4>
+         <p class="w3-center"><img src="img/Xie3.jpg"style="height:90%;width:90%;border-radius:5px;" alt="Avatar"></p>
+         <hr>
+		<div style="font-family:Tahoma, Geneva, sans-serif;font-size:16px;text-align:center;">
+		Xavier Institute of Engineering,<br>
+		Mahim Causeway,Opp Raheja Hospital,<br>
+		Mumbai, Maharashtra 400016, India.<br>
+		Phone: +91 9833704828<br>
+		Email: tedxxie@gmail.com<br><br>
+		</div>
+        </div>
+      </div>
+      <br>
+      
+
+    
+    <!-- End Left Column -->
+    </div>
+    
+    <!-- Middle Column -->
+    <div class="w3-col m7">
+	
+      <div class="w3-row-padding">
+        <div class="w3-col m12">
+          <div class="w3-card-2 w3-round w3-white">
+            <div class="w3-container w3-padding">
+			
+			<center>
+			<marquee direction="left" width="400" behavior="alternate" scrollamount="3" scrolldelay="40%">
+
+			<font face="Comic Sans MS, cursive, sans-serif" size="6">
+			Welcome to Transmission
+			</font></marquee>
+			</center>
+			
+			<div style="border: 4px solid #85C1E9;">
+			<div style="border: 3	px dashed #5DADE2; margin:2px;">
+			<img src="img/trans2.jpg" width="100%" height="100%"/>
+			</div>
+			</div>
+			
+            </div>
+          </div>
+        </div>
+      </div>
+    <br>
+	
+	  
+      <div class="w3-row-padding">
+        <div class="w3-col m12">
+          <div class="w3-card-2 w3-round w3-white">
+            <div class="w3-container w3-padding">
+			
+			<div style="Comic Sans MS, cursive, sans-serif;font-size:28px;text-align:center;margin-bottom:5px;">Happy Memories Pic</div>
+			
+        <div id="sliderFrame">
+        <div id="slider"  >
+            <img src="img/sliA (2).jpg" />
+            <img src="img/sliA (4).jpg" />
+            <img src="img/sliA (5).jpg" />
+            <img src="img/sliA (8).jpg" />
+			<img src="img/sliA (6).jpg" />
+        </div>
+        <!--Custom navigation buttons on both sides-->
+        <div class="group1-Wrapper">
+            <a onclick="imageSlider.previous()" class="group1-Prev"></a>
+            <a onclick="imageSlider.next()" class="group1-Next"></a>
+        </div>
+        <!--nav bar-->
+        <div style="text-align:center;padding:20px;z-index:20;">
+            <a onclick="imageSlider.previous()" class="group2-Prev"></a>
+            <a id='auto' onclick="switchAutoAdvance()"></a>
+            <a onclick="imageSlider.next()" class="group2-Next"></a>
+        </div>
+    </div>
+	
+            </div>
+          </div>
+        </div>
+      </div>
+	  
+	  
+	  
+	  	  <br>
+	   <div class="w3-row-padding">
+        <div class="w3-col m12">
+          <div class="w3-card-2 w3-round w3-white">
+            <div class="w3-container w3-padding">
+              
+			<div style="font-family:Impact, Charcoal, sans-serif;font-size:28px;text-align:center;margin-bottom:3px;">Shedule of Transmission Event
+			</div>
+			  
+			  <div style="border:4px solid #58D68D;padding:3px;">
+				<img src="img/trans4.jpg" width="100%" height="100%"/>
+			  </div>
+			  
+			  <br>
+			
+			</div>
+          </div>
+        </div>
+      </div>
+	  
+	  
+
+	  	  	<br>
+      <div class="w3-row-padding">
+        <div class="w3-col m12">
+          <div class="w3-card-2 w3-round w3-white">
+            <div class="w3-container w3-padding">
+			
+
+			
+			<br>
+			
+			<div style="font-family:Courier New, Courier, monospace; font-size:28px; text-align:center;font-weight:600;">-: Types of Event :-</div>
+			</br>
+			
+			<div style="background:#D6DBDF; border:3px dashed #EC7063; border-radius:5px;">
+<center>
+
+<br>
+<font face="flutsaus" size="7">
+<img src="img/TechQuizImg1.png" width="70" height="70" align="center">
+<b>Technical Quiz</b>
+<img src="img/TechQuizImg2.png" width="70" height="70" align="center">
+</font>
+
+</center>
+
+<center>
+<p><font face="comic sans ms" size="5">
+🙋 Hey, my tech loving friends<br>
+😎Here's an exciting 🎉 event for you<br>
+Do you love quizzes 😇 that test your facts ❓❓❓<br> 
+Do you love gaining knowledge 📚 from others❓❓❓<br>
+So think no further,<br>
+Cause the event you seek for is right here 👇<br>
+Transmission at Xie presents to all  TECHNICAL QUIZ 🏃<br>
+Where all the budding engineers<br>
+Will come together to have a friendly competition
+</font></p>
+</center>
+
+<center>
+<p><font face="comic sans ms" size="5">
+-: <u>Detailed</u> :-<br>
+📆Date: 5th February<br>
+Venue: Xavier Institute of Engineering<br>
+⏰Time: 9AM onwards<br>
+👥Team: 1 or 2 or 3 people<br>
+🔊Entry fees: 100 per team<br>
+💰Prizes : 🎉3000🎉
+</font></p>
+</center>
+
+<hr color="black" size="1" width="100%">
+
+<center>
+<p><font face="comic sans ms" size="5">
+-: 📌 <u>Rules</u> 📌 :-<br>
+The quiz will consist of 3 rounds<br>
+🙊No offensive languages.<br>
+❌No sarcastic comments.<br>
+🔊Bring your ID card along.<br>
+📱🚫Use of electronic devices is stricly prohibited,<br>
+if caught the team will be disqualified 🔫
+</font></p>
+</center>
+
+<hr color="black" size="1" width="100%">
+
+<center>
+<p><font face="comic sans ms" size="5">
+🔎 <u>Contact</u> for inquiry as well as <u>registration</u> ☎:<br>
+📞Princes :- +91 9878654532<br>
+📞Dev :- +91 9845327812<br>
+
+<hr color="black" size="0" width="500px">
+
+📎Registration link:
+<a href="https://goo.gl/poYZ4t">https://goo.gl/poYZ4t</a>
+
+</font></p>
+<center>			
+			
+			
+			</div>
+			  
+            </div>
+          </div>
+        </div>
+      </div>
+	  
+	  
+      <div class="w3-container w3-card-2 w3-white w3-round w3-margin"><br>
+        <img src="img/trans3.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:15%;height:15%;">
+        <span class="w3-right w3-opacity">1 min</span>
+        <h4>Transmission</h4><br>
+        <hr class="w3-clear">
+        <p> In Xie, The Transmission organise various types of event. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+              <img src="img/eveA (14).jpg" style="width:100%" alt="Northern Lights" class="w3-margin-bottom">
+            </div>
+            <div class="w3-half">
+              <img src="img/eveA (3).jpg" style="width:100%" alt="Nature" class="w3-margin-bottom">
+          </div>
+		  
+		  <div class="w3-half">
+              <img src="img/eveA (2).jpg" style="width:100%" alt="Northern Lights" class="w3-margin-bottom">
+            </div>
+            <div class="w3-half">
+              <img src="img/eveA (12).jpg" style="width:100%" alt="Nature" class="w3-margin-bottom">
+          </div>
+		  
+		 <div class="w3-half">
+              <img src="img/eveA (6).jpg" style="width:100%" alt="Northern Lights" class="w3-margin-bottom">
+            </div>
+            <div class="w3-half">
+              <img src="img/eveA (8).jpg" style="width:100%" alt="Nature" class="w3-margin-bottom">
+          </div>
+		  
+        </div>
+        <button type="button" class="w3-btn w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button>
+        <button type="button" class="w3-btn w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button>
+      </div>
+      
+	  
+      <div class="w3-row-padding">
+        <div class="w3-col m12">
+          <div class="w3-card-2 w3-round w3-white">
+            <div class="w3-container w3-padding">
+              <h6 class="w3-opacity">Social Media facebook...</h6>
+              <p contenteditable="true" class="w3-border w3-padding" >Status: Feeling Happy</p>
+              <button type="button" class="w3-btn w3-theme" id="venu"><i class="fa fa-pencil"></i>&nbsp Post</button>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  
+	  <br>
+	   <div class="w3-row-padding" id="venu">
+        <div class="w3-col m12">
+          <div class="w3-card-2 w3-round w3-white">
+            <div class="w3-container w3-padding">
+              
+			<div style="font-family:Impact, Charcoal, sans-serif;font-size:28px;text-align:center;margin-bottom:3px;">Location of Xavier College &nbsp <span id="venu2" style="text-align:center;"><a href="#venu2" title="click to get Written Address"><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i> &nbsp Address </a></span></div>
+			  
+			  <div style="border:4px solid #58D68D;padding:3px;">
+			  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1931.523007653347!2d72.84157819460886!3d19.044995205680227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1472800273837" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen style="border:3px solid white;"></iframe>
+			  </div>
+			  <br>
+			
+			</div>
+          </div>
+        </div>
+      </div>
+	   
+	  
+<!--
+      <div class="w3-container w3-card-2 w3-white w3-round w3-margin"><br>
+        <img src="img_avatar5.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">16 min</span>
+        <h4>Jane Doe</h4><br>
+        <hr class="w3-clear">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <button type="button" class="w3-btn w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button>
+        <button type="button" class="w3-btn w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button>
+      </div>
+-->
+
+      <div class="w3-container w3-card-2 w3-white w3-round w3-margin"><br>
+        <img src="img/img_avatar5.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">32 min</span>
+        <h4>Bustin Jieber</h4><br>
+        <hr class="w3-clear">
+        <p>Most of the participants, participate in this event..</p>
+        <img src="img/eveA (4).jpg" style="width:100%" class="w3-margin-bottom">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <button type="button" class="w3-btn w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button>
+        <button type="button" class="w3-btn w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button>
+      </div>
+	  
+      <div class="w3-row-padding">
+        <div class="w3-col m12">
+          <div class="w3-card-2 w3-round w3-white">
+            <div class="w3-container w3-padding" >
+			
+			<div style="border:3px solid #EC7063;">
+          <div style="text-align:center;font-size:22px;color:red;"><i class="fa fa-youtube-play" aria-hidden="true"></i>&nbsp Watch The Previous Year Video &nbsp <i class="fa fa-youtube-play" aria-hidden="true"></i></div>
+		  
+		  <iframe width="46%" height="48%" src="https://www.youtube.com/embed/VzxbK7a8NSY" frameborder="0" allowfullscreen style="margin:10px;"></iframe>
+		  <iframe width="46%" height="48%" src="https://www.youtube.com/embed/prPwcc16AvE" frameborder="0" allowfullscreen style="margin:10px"></iframe>
+		  </span>
+			  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	  
+      
+    <!-- End Middle Column -->
+    </div>
+    
+    <!-- Right Column -->
+    <div class="w3-col m2">
+      <div class="w3-card-2 w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Upcoming Events:</p>
+          <img src="img/span2.jpg" alt="Forest" style="width:100%;height:100%;border-radius:10px;">
+          <p><strong><big>'Spandan' is a cultural fest organized every year with innovative themes and events by staff.
+			</big></strong></p>
+          <p>Friday 10:00 AM</p>
+          <p><button class="w3-btn w3-btn-block w3-theme-l4">Info</button></p>
+        </div>
+      </div>
+      <br>
+	  
+	        
+      <div class="w3-card-2 w3-round w3-white w3-padding-16 w3-center" id="share">
+       <div style="font-family: Arial Black, Gadget, sans-serif;font-size:18px;"> Share on... </div>
+	   <br>		
+	   <div>
+	   <i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i><span style="margin-top:20px;margin-right:20px;margin-bottom:20px;"></span>
+	   <i class="fa fa-youtube-square fa-3x" aria-hidden="true"></i><span style="margin-right:20px;margin-bottom:20px;"></span>
+	     <i class="fa fa-google-plus-official fa-3x" aria-hidden="true"></i><br><br>
+	   <i class="fa fa-instagram fa-3x" aria-hidden="true"></i><span style="margin-right:20px;margin-bottom:20px;"></span>
+	   <i class="fa fa-twitter-square fa-3x" aria-hidden="true"><span style="margin-right:20px;margin-bottom:20px;"></span></i>
+	   <i class="fa fa-pinterest fa-3x" aria-hidden="true"></i><br>
+
+	   <br>
+	   </div>
+	   
+      </div>
+      <br>
+	  
+      
+      <div class="w3-card-2 w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p><b>Participate in</b></p>
+		  <p><big><u>Swap Coding</u></big></p>
+          <img src="img/trans9.jpg" alt="Avatar" style="width:80%;border-radius:15px;"><br>
+          <span>Regester</span>
+          <div class="w3-row w3-opacity">
+            <div class="w3-half">
+              <button class="w3-btn w3-green w3-btn-block w3-section" title="Accept"><i class="fa fa-check"></i></button>
+            </div>
+            <div class="w3-half">
+              <button class="w3-btn w3-red w3-btn-block w3-section" title="Decline"><i class="fa fa-remove"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+	  
+	  
+	 <div class="w3-card-2 w3-round w3-white w3-center">
+        <div style="padding:5px; font-size:18px; "> <p>FIFA</p> </div>
+			<div align="center">
+		 <img src="img/trans7.jpg" width="98%" height="100%" class="w3-margin-bottom"/>
+		 </div>
+		 
+      </div>
+      <br>
+	  
+	  
+	   <div class="w3-card-2 w3-round w3-white w3-padding-16 w3-center">
+		<div>
+       <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fxaviertransmission%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="94%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+      </div>
+	  </div>
+      <br>
+	 
+	  
+	  <!-- event -->
+      <div class="w3-card-2 w3-round w3-white">
+       
+         <h4 class="w3-center">Robotic Challange</h4>
+			<div align="center">
+		 <img src="img/trans8.jpg" width="98%" height="100%" class="w3-margin-bottom"/>
+		 </div>
+       
+      </div>
+      <br>
+	  
+      <div class="w3-card-2 w3-round w3-white w3-padding-16 w3-center">
+        <p>Hey</p>
+      </div>
+      <br>
+
+      <div class="w3-card-2 w3-round w3-white w3-padding-16 w3-center">
+	  <div style="background-color: #CACFD2; text-align:center;margin:10%; padding:10px; width:80%;"><b>
+        Hurry up..!<br>
+		Register Your Name...<br>
+		Right Now !!</b>
+	  </div>
+	  
+		<img src="img/programmer.gif" width="60%" height="60%">
+      </div>
+      <br>
+      
+      <div class="w3-card-2 w3-round w3-white w3-padding-32 w3-center">
+        <p><i class="fa fa-bug w3-xxlarge"></i></p>
+      </div>
+      
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+<!-- End Page Container -->
+</div>
+<br>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-d3 w3-padding-16">
+
+<div style="font-family:Tahoma, Geneva, sans-serif; font-size:18px; text-align:center; margin:10px;">
+Designed and Developed by<br><a href="http://devdeveloper.co.nf/f3">DevDeveloper</a>
+</div>
+
+</footer>
+
+<footer class="w3-container w3-theme-d5">
+
+<div style="text-align:center;">
+
+  <h5>Like / Share / Follow</h5>
+<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FDevDeveloper3&width=94&layout=button&action=like&size=small&show_faces=true&share=true&height=65&appId" width="94" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+<iframe src="https://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2FDevDeveloper3&width=64&height=65&layout=button&size=small&show_faces=true&appId" width="64" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+</div>
+</footer>
+ 
+<script>
+// Accordion
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-theme-d1";
+    } else {
+        x.className = x.className.replace("w3-show", "");
+        x.previousElementSibling.className =
+        x.previousElementSibling.className.replace(" w3-theme-d1", "");
+    }
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow54.js"></script>
+<noscript> <a href="http://www.scrolltotop.com/"> </a> </noscript>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://www.jacklmoore.com/colorbox/jquery.colorbox.js"></script>
+<script>
+function openColorBox(){
+$.colorbox({iframe:true, width:"80%", height:"80%", href: "popRegister2.html"});
+}
+
+setTimeout(openColorBox, 10000);
+</script>
+
+</body>
+</html>
+
